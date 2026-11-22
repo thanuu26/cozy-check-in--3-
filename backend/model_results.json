@@ -1,0 +1,39 @@
+{
+    "data_source": "Kaggle student lifestyle dataset with generated features and target",
+    "total_rows": 2800,
+    "features": [
+        "sleep",
+        "study",
+        "screen",
+        "meals",
+        "activity",
+        "mood"
+    ],
+    "target": "wellbeing",
+    "sklearn_version": "1.9.1",
+    "models": {
+        "LinearRegression": {
+            "rmse": 10.817,
+            "mae": 8.669,
+            "r2_test": 0.826,
+            "r2_cv5_mean": 0.812,
+            "r2_cv5_std": 0.012
+        },
+        "RandomForest": {
+            "rmse": 3.72,
+            "mae": 2.769,
+            "r2_test": 0.979,
+            "r2_cv5_mean": 0.974,
+            "r2_cv5_std": 0.004
+        }
+    },
+    "best": "RandomForest",
+    "feature_importance": {
+        "sleep": 12.8614,
+        "study": 26.4689,
+        "screen": 0.7067,
+        "meals": 4.9684,
+        "activity": 0.314,
+        "mood": 3.5419
+    }
+}
